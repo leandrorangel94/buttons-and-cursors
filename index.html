@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons and cursors</title>
+        <script src="https://unpkg.com/phosphor-icons"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Test your buttons</h1>
+            <p>Interact with your buttons and watch  the change of appearence and the cursors</p>
+        </div>
+        <div class="content">
+            <div>
+                <button class="primary">Focus primary</button>
+                <button class="primary" disabled>disabled</button>
+                <button class="primary loading">
+                    <i class="ph-circle-notch"></i>
+                    Default Primary
+                </button>
+                <button class="primary movable">
+                    <i class="ph-list"></i>
+                    Movable primary
+                </button>
+            </div>
+            <div>
+                <button class="secondary">Focus secondary</button>
+                <button class="secondary" disabled>disabled</button>
+                <button class="secondary loading">
+                    <i class="ph-circle-notch"></i>
+                    Default secondary
+                </button>
+                <button class="secondary movable">
+                    <i class="ph-list"></i>
+                    Movable secondary
+                </button>
+            </div>
+            <div>
+                <button class="tertiary">Focus tertiary</button>
+                <button class="tertiary" disabled>disabled</button>
+                <button class="tertiary loading">
+                    <i class="ph-circle-notch"></i>
+                    Default tertiary
+                </button>
+                <button class="tertiary movable">
+                    <i class="ph-list"></i>
+                    Movable tertiary
+                </button>
+            </div>
+        </div>
+        <!-- <script>
+            function loading(event){
+                const button = event.currentTarget
+                button.classList.add('loading')
+                const text = button.textContent
+                button.innerHTML = `<i class="ph-circle-notch"></i>${text}`
+            }
+        </script> -->
+    </body>
+</html>
